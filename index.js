@@ -4,7 +4,7 @@ const app = express();
 
 app.use(express.json());
 
-const { listFiles, renameFiles, moveFileWithSize } = require('./handler')
+const { listFiles, renameFiles, moveFileWithSize, resizeImage, resizeVideo } = require('./handler')
 
 dotenv.config();
 
@@ -19,3 +19,5 @@ app.listen(port, () => {
 app.post('/api/v1/list', listFiles);
 app.post('/api/v1/rename', renameFiles);
 app.post('/api/v1/move/search', moveFileWithSize);
+app.post('/api/v1/resize', resizeImage);
+app.post('/api/v1/resize/video', resizeVideo)

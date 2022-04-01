@@ -21,6 +21,9 @@
   "dependencies": {
     "dotenv": "^16.0.0",
     "express": "^4.17.3",
+    "ffmpeg": "0.0.4",
+    "fluent-ffmpeg": "^2.1.2",
+    "jimp": "^0.16.1",
     "moment": "^2.29.1",
     "nodemon": "^2.0.15"
   }
